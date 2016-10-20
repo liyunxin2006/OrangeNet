@@ -5,7 +5,6 @@ use_frameworks!
 target 'OrangeNet' do
     pod 'Alamofire', '~> 4.0'
     pod 'SnapKit', '~> 3.0.0'
-    pod 'SwiftyJSON'
     pod 'Kingfisher'
 end
 
