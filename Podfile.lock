@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (4.0.0)
+  - SnapKit (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - SnapKit (~> 3.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  SnapKit: 98af0a4e9369d3c58f758967518081dbdc7eb1d9
+
+PODFILE CHECKSUM: 1e3479f0c32e9500816312d4ef5231d5759fe74a
+
+COCOAPODS: 1.1.0.rc.2
