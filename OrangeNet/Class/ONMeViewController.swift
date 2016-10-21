@@ -10,4 +10,9 @@ import UIKit
 
 class ONMeViewController: UIViewController {
     
+    override func viewDidLoad() {
+        self.view.backgroundColor = UIColor.white
+        title = "我的"
+    }
+    
 }

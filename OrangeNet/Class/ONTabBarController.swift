@@ -17,12 +17,14 @@ class ONTabBarController: UITabBarController {
     
     fileprivate func customControllers() {
         let homeController = ONHomeViewController()
-        homeController.tabBarItem = UITabBarItem(title: "首页", image: nil, selectedImage: nil)
+        let homeNavController = UINavigationController(rootViewController: homeController)
+        homeNavController.tabBarItem = UITabBarItem(title: "首页", image: nil, selectedImage: nil)
         
         let meController = ONMeViewController()
-        meController.tabBarItem = UITabBarItem(title: "我的", image: nil, selectedImage: nil)
+        let meNavController = UINavigationController(rootViewController: meController)
+        meNavController.tabBarItem = UITabBarItem(title: "我的", image: nil, selectedImage: nil)
         
-        self.viewControllers = [homeController, meController]
+        self.viewControllers = [homeNavController, meNavController]
     }
     
 }
