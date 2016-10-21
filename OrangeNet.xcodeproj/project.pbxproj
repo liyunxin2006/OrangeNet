@@ -15,6 +15,9 @@
 		F46D58681DB8AD4400FF8E14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46D58661DB8AD4400FF8E14 /* LaunchScreen.storyboard */; };
 		F46D58731DB8AD4500FF8E14 /* OrangeNetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D58721DB8AD4500FF8E14 /* OrangeNetTests.swift */; };
 		F46D587E1DB8AD4500FF8E14 /* OrangeNetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D587D1DB8AD4500FF8E14 /* OrangeNetUITests.swift */; };
+		F46D58911DB901B700FF8E14 /* ONTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D58901DB901B700FF8E14 /* ONTabBarController.swift */; };
+		F46D58931DB903D800FF8E14 /* ONHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D58921DB903D800FF8E14 /* ONHomeViewController.swift */; };
+		F46D58951DB903EA00FF8E14 /* ONMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D58941DB903EA00FF8E14 /* ONMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		F46D58791DB8AD4500FF8E14 /* OrangeNetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrangeNetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46D587D1DB8AD4500FF8E14 /* OrangeNetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeNetUITests.swift; sourceTree = "<group>"; };
 		F46D587F1DB8AD4500FF8E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F46D58901DB901B700FF8E14 /* ONTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONTabBarController.swift; sourceTree = "<group>"; };
+		F46D58921DB903D800FF8E14 /* ONHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONHomeViewController.swift; sourceTree = "<group>"; };
+		F46D58941DB903EA00FF8E14 /* ONMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,11 @@
 		F46D585C1DB8AD4400FF8E14 /* OrangeNet */ = {
 			isa = PBXGroup;
 			children = (
+				F46D588F1DB9017600FF8E14 /* Class */,
+				F46D588B1DB9012900FF8E14 /* Model */,
+				F46D588C1DB9012900FF8E14 /* Resource */,
+				F46D588D1DB9012900FF8E14 /* Util */,
+				F46D588E1DB9012900FF8E14 /* View */,
 				F46D585D1DB8AD4400FF8E14 /* AppDelegate.swift */,
 				F46D585F1DB8AD4400FF8E14 /* ViewController.swift */,
 				F46D58611DB8AD4400FF8E14 /* Main.storyboard */,
@@ -147,6 +158,44 @@
 				F46D587F1DB8AD4500FF8E14 /* Info.plist */,
 			);
 			path = OrangeNetUITests;
+			sourceTree = "<group>";
+		};
+		F46D588B1DB9012900FF8E14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F46D588C1DB9012900FF8E14 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F46D588D1DB9012900FF8E14 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F46D588E1DB9012900FF8E14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F46D588F1DB9017600FF8E14 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F46D58901DB901B700FF8E14 /* ONTabBarController.swift */,
+				F46D58921DB903D800FF8E14 /* ONHomeViewController.swift */,
+				F46D58941DB903EA00FF8E14 /* ONMeViewController.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +387,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F46D58601DB8AD4400FF8E14 /* ViewController.swift in Sources */,
+				F46D58951DB903EA00FF8E14 /* ONMeViewController.swift in Sources */,
+				F46D58911DB901B700FF8E14 /* ONTabBarController.swift in Sources */,
+				F46D58931DB903D800FF8E14 /* ONHomeViewController.swift in Sources */,
 				F46D585E1DB8AD4400FF8E14 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
