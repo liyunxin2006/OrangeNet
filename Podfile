@@ -10,6 +10,9 @@ end
 
 #pod install --verbose --no-repo-update
 
+#git submodule add https://github.com/chaconinc/DbConnector
+#git submodule update --init --recursive
+
 #git diff readme.txt
 #git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别
 #git log --pretty=oneline
