@@ -163,7 +163,7 @@ class ONHomeViewController: UIViewController {
             observer.sendCompleted()
         }*/
         
-        scopedExample("`collect`") {
+        /*scopedExample("`collect`") {
             let (signal, observer) = Signal<Int, NoError>.pipe()
             // note that the signal is of type `Int` and observer is of type `[Int]` given we're "collecting"
             // `Int` values for the lifetime of the signal
@@ -176,7 +176,99 @@ class ONHomeViewController: UIViewController {
             observer.send(value: 3)
             observer.send(value: 4)
             observer.sendCompleted()
+        }*/
+        
+        
+        /*
+         *********************SignalProducer********************
+        */
+        
+        /*scopedExample("Subscription") {
+            let producer = SignalProducer<Int, NoError>({ observer, _ in
+                print("New subscription, starting operation")
+                observer.send(value: 1)
+                observer.send(value: 2)
+            })
+            
+            let subscriber1 = Observer<Int, NoError>(value: { print("Subscriber 1 received \($0)") })
+            let subscriber2 = Observer<Int, NoError>(value: { print("Subscriber 2 received \($0)") })
+            
+            print("Subscriber 1 subscribes to producer")
+            producer.start(subscriber1)
+            
+            print("Subscriber 2 subscribes to producer")
+            // Notice, how the producer will start the work again
+            producer.start(subscriber2)
+        }*/
+        
+        /*scopedExample("`empty`") {
+            let emptyProducer = SignalProducer<Int, NoError>.empty
+            
+            let observer = Observer<Int, NoError>(value: { _ in print("next not called") },
+                                                  failed: { _ in print("error not called") },
+                                                  completed: { print("completed called") },
+                                                  interrupted: { print("interrupted not called") })
+            
+            emptyProducer.start(observer)
+        }*/
+        
+        /*scopedExample("`never`") {
+            let neverProducer = SignalProducer<Int, NoError>.never
+            
+            let observer = Observer<Int, NoError>(value: { _ in print("next not called") },
+                                                  failed: { _ in print("error not called") },
+                                                  completed: { print("completed not called") },
+                                                  interrupted: { print("interrupted not called") })
+            
+            neverProducer.start(observer)
+        }*/
+        
+        /*scopedExample("`startWithSignal`") {
+//            var started = false
+            var value: Int?
+            
+            SignalProducer<Int, NoError>(values: 11, 12, 13, 14, 15)
+//            SignalProducer<Int, NoError>(value: 42)
+                .on(value: {
+                    value = $0
+                })
+                .startWithSignal { signal, disposable in
+                    print(signal)
+                    print("a:\(value)")
+                }
+            
+            print("b:\(value)")
+        }*/
+        
+        /*scopedExample("'startWithNext'") {
+            SignalProducer<Int, NoError>(value: 42).startWithValues {
+                print($0)
+            }
+        }*/
+        
+        /*scopedExample("`startWithCompleted`") {
+            SignalProducer<Int, NoError>(value: 42)
+                .startWithCompleted {
+                    print("completed called")
+            }
+        }*/
+        
+        /*scopedExample("`startWithFailed`") {
+            SignalProducer<Int, NSError>(error: NSError(domain: "example", code: 42, userInfo: nil))
+                .startWithFailed { error in
+                    print(error)
+            }
+        }*/
+        
+        scopedExample("`startWithInterrupted`") {
+            let disposable = SignalProducer<Int, NoError>.never
+                .startWithInterrupted {
+                    print("interrupted called")
+            }
+            
+            disposable.dispose()
         }
+        
     }
 
 }
