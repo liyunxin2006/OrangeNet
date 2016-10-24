@@ -18,8 +18,10 @@ class ONHomeViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         title = "首页"
         
-        let textField = UITextField()
-        textField.backgroundColor = UIColor.lightGray
+        let textField: UITextField = {
+            $0.backgroundColor = UIColor.lightGray
+            return $0
+        }(UITextField())
         self.view .addSubview(textField)
         
         textField.snp.makeConstraints { make in
@@ -27,6 +29,56 @@ class ONHomeViewController: UIViewController {
             make.height.equalTo(30)
             make.center.equalTo(self.view)
         }
+        
+//        let signalProducer = SignalProducer<Int, NoError> { observer, disposable in
+//            
+//            QueueScheduler.main.schedule(after: Date.init(timeInterval: 5, since: Date.init()), action: {
+//                observer.send(value: 1)
+//            })
+//            
+//            QueueScheduler.main.schedule(after: Date.init(timeInterval: 10, since: Date.init()), action: {
+//                observer.send(value: 2)
+//            })
+//            
+//            print("------------**********------------")
+//        }
+//        
+//        signalProducer.startWithSignal { (signal, disposable) in
+//            signal.observeValues {
+//                print($0)
+//            }
+//            
+//            QueueScheduler.main.schedule(after: Date.init(timeInterval: 7, since: Date.init()), action: {
+//                signal.observeValues {
+//                    print("aaa\($0)")
+//                }
+//            })
+//        }
+        
+//        signalProducer.startWithValues {
+//            print($0)
+//        }
+//        
+//        signalProducer.startWithValues {
+//            print($0)
+//        }
+        
+//        let searchStrings = textField.reactive.continuousTextValues.map({ (text) -> String in
+//            text!
+//        }).observeValues {
+//            print($0)
+//        }
+        
+//        let request = URLRequest(url: URL(string: "https://www.baidu.com")!)
+//        
+//        let searchResults = URLSession.shared.reactive.data(with: request).map { (data, response) in
+//            String(data: data, encoding: .utf8)!
+//        }
+//        .observe(on: UIScheduler())
+//        
+//        searchResults.startWithResult { result in
+//            print("Search results: \(result.value)")
+//        }
         
         testReactiveCocoa()
         
