@@ -44,6 +44,8 @@ class ONMeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MeTableCell
+//        cell.imgView.kf_setImage(with: URL(string: "http://img1.imgtn.bdimg.com/it/u=1461962155,2092993446&fm=21&gp=0.jpg")!)
+        cell.imgView.image = UIImage(named: "twitterLogo")
         return cell
     }
     
