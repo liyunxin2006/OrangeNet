@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30D955601CA1203C2DDF633D /* Pods_OrangeNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E0B29FA63B8F810CEF3A69 /* Pods_OrangeNet.framework */; };
+		F446D2DA1DC1F39B004D9367 /* MeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446D2D91DC1F39A004D9367 /* MeTableCell.swift */; };
 		F46D585E1DB8AD4400FF8E14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D585D1DB8AD4400FF8E14 /* AppDelegate.swift */; };
 		F46D58601DB8AD4400FF8E14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D585F1DB8AD4400FF8E14 /* ViewController.swift */; };
 		F46D58631DB8AD4400FF8E14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46D58611DB8AD4400FF8E14 /* Main.storyboard */; };
@@ -238,6 +239,7 @@
 		2315A30E6DD08807A8E67660 /* Pods-OrangeNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeNet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrangeNet/Pods-OrangeNet.debug.xcconfig"; sourceTree = "<group>"; };
 		46E0B29FA63B8F810CEF3A69 /* Pods_OrangeNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E752590455AC0F47C3E6EC /* Pods-OrangeNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrangeNet/Pods-OrangeNet.release.xcconfig"; sourceTree = "<group>"; };
+		F446D2D91DC1F39A004D9367 /* MeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeTableCell.swift; sourceTree = "<group>"; };
 		F46D585A1DB8AD4400FF8E14 /* OrangeNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46D585D1DB8AD4400FF8E14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F46D585F1DB8AD4400FF8E14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -400,6 +402,7 @@
 				F46D58901DB901B700FF8E14 /* ONTabBarController.swift */,
 				F46D58921DB903D800FF8E14 /* ONHomeViewController.swift */,
 				F46D58941DB903EA00FF8E14 /* ONMeViewController.swift */,
+				F446D2D91DC1F39A004D9367 /* MeTableCell.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -810,6 +813,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F446D2DA1DC1F39B004D9367 /* MeTableCell.swift in Sources */,
 				F46D58601DB8AD4400FF8E14 /* ViewController.swift in Sources */,
 				F46D58951DB903EA00FF8E14 /* ONMeViewController.swift in Sources */,
 				F46D58911DB901B700FF8E14 /* ONTabBarController.swift in Sources */,

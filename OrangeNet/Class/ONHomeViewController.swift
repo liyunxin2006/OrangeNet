@@ -30,6 +30,26 @@ class ONHomeViewController: UIViewController {
             make.center.equalTo(self.view)
         }
         
+        func test(name: StaticString? = nil) {
+            print(name)
+            let newStr = name.map(String.init(describing:))
+            print(newStr)
+        }
+        test(name: "aaa")
+        
+        let currentIdentifier: UInt = 2
+        let (nextIdentifier, overflow) = UInt.addWithOverflow(currentIdentifier, 1)
+        print(currentIdentifier)
+        print(nextIdentifier)
+        print(overflow)
+        
+        let array = [1, 2, 3, 4].flatMap { $0 }
+        print(array)
+        for i in [1, 2, 3].indices {
+            print(i)
+        }
+        
+        
 //        let signalProducer = SignalProducer<Int, NoError> { observer, disposable in
 //            
 //            QueueScheduler.main.schedule(after: Date.init(timeInterval: 5, since: Date.init()), action: {
