@@ -31,9 +31,9 @@ class ONHomeViewController: UIViewController {
         }
         
         func test(name: StaticString? = nil) {
-            print(name)
+            print(name ?? "")
             let newStr = name.map(String.init(describing:))
-            print(newStr)
+            print(newStr ?? "")
         }
         test(name: "aaa")
         
