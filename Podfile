@@ -6,6 +6,8 @@ target 'OrangeNet' do
     pod 'Alamofire', '~> 4.0'
     pod 'SnapKit', '~> 3.0.0'
     pod 'Kingfisher'
+    pod 'RxSwift',    '~> 3.0'
+    pod 'RxCocoa',    '~> 3.0'
 end
 
 #pod install --verbose --no-repo-update
