@@ -336,10 +336,6 @@
 			isa = PBXGroup;
 			children = (
 				F46D588F1DB9017600FF8E14 /* Class */,
-				F46D588B1DB9012900FF8E14 /* Model */,
-				F46D588C1DB9012900FF8E14 /* Resource */,
-				F46D588D1DB9012900FF8E14 /* Util */,
-				F46D588E1DB9012900FF8E14 /* View */,
 				F46D585D1DB8AD4400FF8E14 /* AppDelegate.swift */,
 				F46D585F1DB8AD4400FF8E14 /* ViewController.swift */,
 				F46D58611DB8AD4400FF8E14 /* Main.storyboard */,
@@ -366,34 +362,6 @@
 				F46D587F1DB8AD4500FF8E14 /* Info.plist */,
 			);
 			path = OrangeNetUITests;
-			sourceTree = "<group>";
-		};
-		F46D588B1DB9012900FF8E14 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F46D588C1DB9012900FF8E14 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		F46D588D1DB9012900FF8E14 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		F46D588E1DB9012900FF8E14 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		F46D588F1DB9017600FF8E14 /* Class */ = {
